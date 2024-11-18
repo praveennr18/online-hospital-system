@@ -7,13 +7,21 @@ import ejs from "ejs";
 
 
 
+// const db = new pg.Client({
+//   user: "postgres",
+//   host: "localhost",
+//   database: "dbms",
+//   password: "praveen",
+//   port: 5432,
+// });
 const db = new pg.Client({
-  user: "postgres",
-  host: "localhost",
-  database: "dbms",
-  password: "praveen",
-  port: 5432,
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false, // Allow insecure SSL connections
+  },
 });
+
+
 db.connect();
 
 import { fileURLToPath } from "url";
