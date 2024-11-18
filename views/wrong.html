@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Error</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .error-container {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .error-message {
+      padding: 20px;
+      text-align: center;
+      background-color: #e74c3c;
+      color: #fff;
+    }
+
+    .error-message h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .error-message p {
+      margin: 10px 0 0;
+    }
+
+    .helper-line {
+      padding: 20px;
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+
+    .helper-line:hover {
+      background-color: #2980b9;
+    }
+
+    .contact-details {
+      margin: 5px 0;
+      font-weight: bold;
+      font-size: 14px;
+      color: #ecf0f1;
+      transition: color 0.3s;
+    }
+
+    .contact-details:hover {
+      color: #bdc3c7;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <div class="error-message">
+      <h1>Invalid Credentials</h1>
+      <p>It seems you've entered the wrong username or password.</p>
+    </div>
+    <div class="helper-line">
+      <p>If you need assistance, please contact our support:</p>
+      <p class="contact-details">Phone: 1-800-123-4567</p>
+      <p class="contact-details">Email: support@example.com</p>
+    </div>
+  </div>
+</body>
+</html>
+

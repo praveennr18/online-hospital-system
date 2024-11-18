@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Doctor Page</title>
+  <link rel="stylesheet" href="/style/index.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #337AB7;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      flex-direction: column;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    input {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #337AB7;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color:#337AB7;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <a href="/">Hospital Management</a>
+          </div>
+          <div class="navbar">
+            <a href="/admin.html">Admin</a>
+            <a href="/doctor.html">Doctor</a>
+            <a href="/patient.html">Patient</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+  <header>
+    <h1>Hello Doctor</h1>
+  </header>
+
+  <main>
+    <form action="/login-doctor" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Login</button>
+    </form>
+    <footer>
+      <p>New User? <a href="/doctor/doctorregister.html">register</a></p>
+    </footer>
+  </main>
+
+</body>
+
+</html>

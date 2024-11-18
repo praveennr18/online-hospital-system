@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Registration Form</title>
+  <link rel="stylesheet" href="/style/index.css">
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 50%;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+      width: 48%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #337ab7;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: 80%;
+      }
+
+      input[type="text"],
+      input[type="tel"] {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <a href="/">Hospital Management</a>
+          </div>
+          <div class="navbar">
+            <a href="/admin.html">Admin</a>
+            <a href="/doctor.html">Doctor</a>
+            <a href="/patient.html">Patient</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </nav>
+      </header>
+  <div class="container">
+    <h2>Patient Registration Form</h2>
+    <form action="/submitpatient-form" method="post">
+      <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+      <input type="text" id="username" name="username" placeholder="username" required>
+      <input type="tel" id="phonenumber" name="phonenumber" placeholder="Phone Number" required>
+      <input type="text" id="address" name="address" placeholder="Address" required>
+      <input type="text" id="password" name="password" placeholder="password" required>
+      
+  
+      <input type="submit" value="Register">
+    </form>
+  </div>
+  <footer>already have a acount ? <a href="/patient.html">login</a></footer>
+</body>
+
+</html>
